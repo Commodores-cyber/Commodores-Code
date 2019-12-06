@@ -35,13 +35,13 @@ public class RobotMap {
   public static void init(){
 
     //driveTrain device initialization
-    driveTrainLeftMaster = new WPI_TalonSRX(1);
-    driveTrainLeftSlave1 = new WPI_TalonSRX(2);
-    driveTrainLeftSlave2 = new WPI_TalonSRX(3);
+    driveTrainLeftMaster = new WPI_TalonSRX(4);
+    driveTrainLeftSlave1 = new WPI_TalonSRX(3);
+    driveTrainLeftSlave2 = new WPI_TalonSRX(5);
 
-    driveTrainRightMaster = new WPI_TalonSRX(4);
-    driveTrainRightSlave1 = new WPI_TalonSRX(5);
-    driveTrainRightSlave2 = new WPI_TalonSRX(6);
+    driveTrainRightMaster = new WPI_TalonSRX(2);
+    driveTrainRightSlave1 = new WPI_TalonSRX(0);
+    driveTrainRightSlave2 = new WPI_TalonSRX(1);
 
     driveTrainLeftMaster.configSelectedFeedbackSensor(FeedbackDevice.QuadEncoder, 0,  0);
     driveTrainRightMaster.configSelectedFeedbackSensor(FeedbackDevice.QuadEncoder, 0,  0);
